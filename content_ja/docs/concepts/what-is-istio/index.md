@@ -16,18 +16,16 @@ Istioはこれらのデプロイの複雑さを軽減し、開発チームの負
 また、あらゆるロギング、テレメトリまたはポリシーシステムに統合できるようにするAPIを含むプラットフォームもあります。
 Istioの多様な機能によって、分散マイクロサービスアーキテクチャを効果的かつ効率的に実行できます。また、マイクロサービスを保護、接続、および監視するための統一された方法を提供します。
 
-## What is a service mesh?
+## サービスメッシュとは？
 
-Istio addresses the challenges developers and operators face as monolithic applications transition towards a distributed microservice architecture. To see how,
-it helps to take a more detailed look at Istio’s service mesh.
+Istioは、モノリシックアプリケーションが分散型マイクロサービスアーキテクチャに移行するときに、開発者や運用者が直面する課題を解決します。
+その方法を知るには、Istioのサービスメッシュをさらに詳しく調べると良いでしょう。
 
-The term service mesh is used to describe the network of microservices that make up such applications and the interactions between them. As a service mesh grows
- in size and complexity, it can become harder to understand and manage. Its requirements can include discovery, load balancing, failure recovery, metrics, and
- monitoring. A service mesh also often has more complex operational requirements, like A/B testing, canary releases, rate limiting, access control, and
- end-to-end authentication.
+サービスメッシュという用語は、アプリケーションを構成するマイクロサービスのネットワークとそれらの間の相互作用を表すために使用されます。
+サービスメッシュの大きさと複雑さが増すにつれて、理解と管理が難しくなります。その要件には、ディスカバリー、ロードバランシング、障害回復、メトリック、および監視が含まれます。
+サービスメッシュには、A/Bテスト、カナリアリリース、レート制限、アクセス制御、エンドツーエンド認証など、より複雑な運用要件もあります。
 
-Istio provides behavioral insights and operational control over the service mesh as a whole, offering a complete solution to satisfy the diverse requirements of
- microservice applications.
+Istioは、サービスメッシュ全体の振る舞いの可視化と運用管理を提供し、マイクロサービスアプリケーションの多様な要件を満たすための完全なソリューションを提供します。
 
 ## Why use Istio?
 
