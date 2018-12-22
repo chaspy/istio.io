@@ -8,14 +8,13 @@ aliases:
     - /about/intro
 ---
 
-Cloud platforms provide a wealth of benefits for the organizations that use them. There’s no denying, however, that adopting the cloud can put strains on DevOps
-teams. Developers must use microservices to architect for portability, meanwhile operators are managing extremely large hybrid and multi-cloud deployments.
-Istio lets you connect, secure, control, and observe services.
+クラウドプラットフォームは、それを使用する組織に豊富なメリットをもたらします。ただし、クラウドを採用することでDevOpsチームに負担がかかる可能性があることは否定できません。
+開発者は移植性を考慮して設計するためにマイクロサービスを使用する必要があります。一方、運用者は非常に大規模なハイブリッドおよびマルチクラウドのデプロイを管理しています。
+Istioを使用することで、サービスが接続、保護、制御、および監視できるようになります。
 
-At a high level, Istio helps reduce the complexity of these deployments, and eases the strain on your development teams. It is a completely open source service
-mesh that layers transparently onto existing distributed applications. It is also a platform, including APIs that let it integrate into any logging platform, or
-telemetry or policy system. Istio’s diverse feature set lets you successfully, and efficiently, run a distributed microservice architecture, and provides a
-uniform way to secure, connect, and monitor microservices.
+Istioはこれらのデプロイの複雑さを軽減し、開発チームの負担を軽減します。それは既存の分散アプリケーションの上に透過的に重なる完全にオープンソースのサービスメッシュです。
+また、あらゆるロギング、テレメトリまたはポリシーシステムに統合できるようにするAPIを含むプラットフォームもあります。
+Istioの多様な機能によって、分散マイクロサービスアーキテクチャを効果的かつ効率的に実行できます。また、マイクロサービスを保護、接続、および監視するための統一された方法を提供します。
 
 ## What is a service mesh?
 
