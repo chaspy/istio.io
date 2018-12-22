@@ -1,6 +1,6 @@
 ---
-title: What is Istio?
-description: Introduces Istio, the problems it solves, its high-level architecture and design goals.
+title: Istioとは?
+description: Istioの紹介、解決する問題、アーキテクチャとデザインのゴール
 weight: 15
 aliases:
     - /docs/concepts/what-is-istio/overview
