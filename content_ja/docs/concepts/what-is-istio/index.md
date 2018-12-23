@@ -44,46 +44,36 @@ Istioを使用すると、ロードバランシング、サービス間認証、
 
 Istioは拡張性を考慮して設計されており、さまざまなデプロイのニーズを満たします。
 
-## Core features
+## 主要機能
 
-Istio provides a number of key capabilities uniformly across a network of
-services:
+Istioは、サービスのネットワーク全体にわたって多数の主要機能を提供します。
 
-### Traffic management
+### トラフィック管理
 
-Istio’s easy rules configuration and traffic routing lets you control the flow of traffic and API calls between services. Istio simplifies configuration of
-service-level properties like circuit breakers, timeouts, and retries, and makes it a breeze to set up important tasks like A/B testing, canary rollouts, and
-staged rollouts with percentage-based traffic splits.
+Istioの簡単なルール設定とトラフィックルーティングにより、サービス間のトラフィックの流れとAPI呼び出しを制御できます。
+Istioは、サーキットブレーカー、タイムアウト、リトライなどのサービスレベルプロパティの設定を単純化し、A / Bテスト、カナリアロールアウト、および段階的ロールアウトなどの重要なタスクをパーセンテージベースのトラフィック分割で設定するのを容易にします。
 
-With better visibility into your traffic, and out-of-box failure recovery features, you can catch issues before they cause problems, making calls more reliable,
-and your network more robust -- no matter what conditions you face.
+トラフィックの視認性が向上し、これまでと異なる障害回復機能があるため、どんな状況であっても問題が発生する前に問題を察知して、通信の信頼性を高め、ネットワークをより堅牢にすることができます。
 
-### Security
+### セキュリティ
 
-Istio’s security capabilities free developers to focus on security at the application level. Istio provides the underlying secure communication channel, and
-manages authentication, authorization, and encryption of service communication at scale. With Istio, service communications are secured by default,
-letting you enforce policies consistently across diverse protocols and runtimes -- all with little or no application changes.
+Istioのセキュリティ機能により、開発者はアプリケーションレベルのセキュリティに集中することができます。
+Istioは、基盤となる安全な通信チャネルを提供し、サービス通信の認証、認可、および暗号化を大規模に管理します。
+Istioでは、サービス通信はデフォルトで保護されているため、アプリケーションをほとんど変更することなく、さまざまなプロトコルやランタイムにわたって一貫してポリシーを適用できます。
 
-While Istio is platform independent, using it with Kubernetes (or infrastructure) network policies, the benefits are even greater, including the ability to
-secure pod-to-pod or service-to-service communication at the network and application layers.
+IstioはKubernetes（またはインフラストラクチャ）のネットワークポリシーと一緒に使用することでプラットフォームに依存しませんが、ネットワークおよびアプリケーション層でのPod-to-PodまたはService-to-Service通信を保護する機能など、利点はさらに大きくなります。
 
-### Observability
+### 可観察性
 
-Istio’s robust tracing, monitoring, and logging give you deep insights into your service mesh deployment. Gain a real understanding of how service performance
-impacts things upstream and downstream with Istio’s monitoring features, while its custom dashboards provide visibility into the performance of all your
-services and let you see how that performance is affecting your other processes.
+Istioの強力なトレース、監視、およびロギングにより、サービスメッシュのデプロイに関する深い洞察が得られます。
+カスタムダッシュボードですべてのサービスのパフォーマンスを可視化し、そのパフォーマンスが他のプロセスにどのように影響しているかを確認しながら、サービスのパフォーマンスがアップストリームおよびダウンストリームにどのように影響するかを実際に理解できます。
 
-Istio’s Mixer component is responsible for policy controls and telemetry collection. It provides backend abstraction and intermediation, insulating the rest of
-Istio from the implementation details of individual infrastructure backends, and giving operators fine-grained control over all interactions between the mesh
-and infrastructure backends.
+IstioのMixerコンポーネントは、ポリシー管理とテレメトリ収集を担当します。
+バックエンドの抽象化と仲介を行ない、個々のインフラストラクチャバックエンドの実装の詳細からIstioの他のコンポーネントを隔離し、メッシュとインフラストラクチャバックエンド間のすべての相互作用を細かく制御できるようにします。
 
-All these features let you more effectively set, monitor, and enforce SLOs on services. Of course, the bottom line is that you can detect and fix issues quickly
-and efficiently.
+これらすべての機能により、サービスのSLOをより効果的に設定、監視、および実施できます。もちろん、肝心な点は、問題を迅速かつ効率的に検出して修正できることです。
 
-### Platform support
-
-Istio is platform-independent and designed to run in a variety of environments, including those spanning Cloud, on-premise, Kubernetes, Mesos, and more. You can
- deploy Istio on Kubernetes, or on Nomad with Consul. Istio currently supports:
+### プラットフォームのサポート
 
 * Service deployment on Kubernetes
 
@@ -91,10 +81,18 @@ Istio is platform-independent and designed to run in a variety of environments, 
 
 * Services running on individual virtual machines
 
-### Integration and customization
+Istioはプラットフォームに依存せず、クラウド、オンプレミス、Kubernetes、Mesosなど、さまざまな環境で動作するように設計されています。
+Kubernetes、またはNomad with ConsulにIstioをデプロイできます。Istioがは現在サポートしているのは：
 
-The policy enforcement component of Istio can be extended and customized to integrate with existing solutions for ACLs, logging, monitoring, quotas, auditing,
-and more.
+* Kubernetesでのサービスデプロイ
+
+* Consulに登録されているサービス
+
+* 個々の仮想マシンで実行されているサービス
+
+### 統合とカスタマイズ
+
+Istioのポリシー適用コンポーネントは、ACL、ロギング、監視、クォータ、監査などの既存のソリューションと統合するように拡張およびカスタマイズできます。
 
 ## Architecture
 
