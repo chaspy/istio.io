@@ -27,23 +27,22 @@ Istioは、モノリシックアプリケーションが分散型マイクロサ
 
 Istioは、サービスメッシュ全体の振る舞いの可視化と運用管理を提供し、マイクロサービスアプリケーションの多様な要件を満たすための完全なソリューションを提供します。
 
-## Why use Istio?
+## なぜIstioを使うのか?
 
-Istio makes it easy to create a network of deployed services with load balancing, service-to-service authentication, monitoring, and more, with [few](/docs/tasks/telemetry/distributed-tracing/overview/#understanding-what-happened) or no code changes
-in service code. You add Istio support to services by deploying a special sidecar proxy throughout your environment that intercepts all network communication
-between microservices, then configure and manage Istio using its control plane functionality, which includes:
+Istioを使用すると、ロードバランシング、サービス間認証、監視などを使用して、サービスのコードを[ほとんど](/docs/tasks/telemetry/distributed-tracing/overview/#understanding-what-happened)変更することなく、デプロイしたサービスのネットワークを簡単に作成できます。
+マイクロサービス間のすべてのネットワーク通信を傍受する特別なサイドカープロキシを環境全体にデプロイしてIstioをサービスに追加し、そのコントロールプレーンの機能を使用してIstioを設定、管理します。コントロールプレーンの機能は：
 
-* Automatic load balancing for HTTP, gRPC, WebSocket, and TCP traffic.
+* HTTP、gRPC、WebSocket、およびTCPトラフィックの自動ロードバランシング
 
-* Fine-grained control of traffic behavior with rich routing rules, retries, failovers, and fault injection.
+* 豊富なルーティングルール、リトライ、フェイルオーバー、およびフォルトインジェクションを使用した、トラフィックのきめ細かい制御。
 
-* A pluggable policy layer and configuration API supporting access controls, rate limits and quotas.
+* アクセス制御、レート制限、クォータをサポートするプラガブルなポリシーレイヤと設定API。
 
-* Automatic metrics, logs, and traces for all traffic within a cluster, including cluster ingress and egress.
+* クラスターの受信と送信を含む、クラスター内のすべてのトラフィックの自動メトリック、ログ、およびトレース。
 
-* Secure service-to-service communication in a cluster with strong identity-based authentication and authorization.
+* IDベースの強力な認証と認可を使用した、クラスタ内のセキュアなサービス間通信。
 
-Istio is designed for extensibility and meets diverse deployment needs.
+Istioは拡張性を考慮して設計されており、さまざまなデプロイのニーズを満たします。
 
 ## Core features
 
